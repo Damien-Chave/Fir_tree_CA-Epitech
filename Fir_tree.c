@@ -61,7 +61,7 @@ void	my_print_line(int spines_base, int nb_star, char c)
 }
 
 
-void	print_leaves(int lines_stage_desc, int spines_base, int size)
+void	print_leaves(int lines_stage_desc, int spines_base, int input_size)
 {
   int	nb_star;
   int	to_show;
@@ -93,18 +93,18 @@ void	print_leaves(int lines_stage_desc, int spines_base, int size)
 }
 
 
-void	print_trunk(int spines_base, int size)
+void	print_trunk(int spines_base, int input_size)
 {
   int	nb_trunc;
   int	i;
 
-  nb_trunc = size;
+  nb_trunc = input_size;
 
   i = 0;
-  if (size % 2 == 0)
+  if (input_size % 2 == 0)
     nb_trunc++;
 
-  while (i < size)
+  while (i < input_size)
     {
       my_print_line(spines_base, nb_trunc, '|');
       i++;
