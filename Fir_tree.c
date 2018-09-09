@@ -61,7 +61,7 @@ void	my_print_line(int spines_base, int nb_star, char c)
 }
 
 
-void	print_leaves(int lines_stage_desc, int spines_base, int input_size)
+void	print_leaves(int lines_stage_desc, int spines_base)
 {
   int	nb_star;
   int	to_show;
@@ -127,7 +127,7 @@ void	tree(int input_size)
 	  count = count - 1;
 	}
   spines_base = get_spines_base(input_size);
-  print_leaves(lines_stage_desc, spines_base, input_size);
+  print_leaves(lines_stage_desc, spines_base);
   print_trunk(spines_base, input_size);
 }
 
