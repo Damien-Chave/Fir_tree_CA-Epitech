@@ -136,7 +136,7 @@ int main(int argc, char **argv)
 {
   if (argc < 2)
   {
-    my_putstr("Choose a size of tree in CLI argument.\n");
+    my_putstr("\nChoose a size of tree in CLI argument.\n\n");
     return (-1);
   }
 
@@ -145,7 +145,7 @@ int main(int argc, char **argv)
 
   if (input_size < 1)
   {
-    my_putstr("Choose a positive integer argument like 1 or more.\n");
+    my_putstr("\nChoose a positive integer argument like 1 or more.\n\n");
     return (-1);
   }
 
@@ -165,11 +165,11 @@ int main(int argc, char **argv)
 
   if (input_size > 9)
   {
-    my_putstr("9 is big enough, think that you would climb the ladder to decorate it.\n");
+    my_putstr("\n9 is big enough, think that you would climb the ladder to decorate it.\n\n");
     return (-1);
   }
 
   else
-    my_putstr("Error: try with a positive integer argument.\n");
+    my_putstr("\nError: try with a positive integer argument.\n\n");
   return (-1);
 }
